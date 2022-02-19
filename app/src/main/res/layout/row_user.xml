@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="20dp"
+    android:elevation="60dp"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_toRightOf="@id/cover"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/githublink1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Github Link"
+            android:layout_toRightOf="@id/cover"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/title"
+            android:visibility="invisible"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
